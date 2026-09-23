@@ -102,7 +102,7 @@
   .reveal { opacity:0; transform:translateY(26px); }
   .reveal.in { opacity:1; transform:none; transition:opacity 0.7s cubic-bezier(.2,.7,.2,1), transform 0.7s cubic-bezier(.2,.7,.2,1); }
   @media (prefers-reduced-motion: reduce) { .reveal { opacity:1 !important; transform:none !important; } }
-  @media (max-width: 768px) { .uvod-grid { grid-template-columns:1fr !important; } .onama-grid { grid-template-columns:1fr !important; } .preobjave-grid { grid-template-columns:1fr !important; } .kontakt-row { grid-template-columns:1fr !important; } .desktop-nav { display:none !important; } .nav-burger { display:flex !important; } .hero-stats { text-align:center; } .phone-cap { white-space:normal !important; } .phone-cap > span { display:block; } .kontakt-submit { align-self:stretch !important; width:100% !important; } }
+  @media (max-width: 768px) { .uvod-grid { grid-template-columns:1fr !important; } .onama-grid { grid-template-columns:1fr !important; } .preobjave-grid { grid-template-columns:1fr !important; } .kontakt-row { grid-template-columns:1fr !important; } .desktop-nav { display:none !important; } .nav-burger { display:flex !important; } .hero-stats { text-align:center; } .hero-cta { flex-direction:column; align-items:flex-start; } .hero-cta a { justify-content:center; width:50%; min-width:200px; } .phone-cap { white-space:normal !important; } .phone-cap > span { display:block; } .kontakt-submit { align-self:stretch !important; width:100% !important; } }
 </style>
 </helmet>
 <div style="background:#F9F4ED; color:#211C14; font-family:'Hanken Grotesk',system-ui,sans-serif; font-size:17px; line-height:1.6;">
@@ -139,11 +139,11 @@
   <section id="top" style="position:relative; overflow:hidden; background:#1B160F; color:#F4EEDF;">
     <img src="assets/mark-cat-badge.png" alt="" aria-hidden="true" width="720" height="720" decoding="async" style="position:absolute; right:-6%; top:50%; transform:translateY(-50%); width:min(58vw,720px); height:auto; opacity:0.06; filter:brightness(4); pointer-events:none;">
     <div style="position:absolute; inset:0; background:radial-gradient(120% 90% at 15% 0%,rgba(190,143,39,0.14),transparent 55%); pointer-events:none;"></div>
-    <div style="position:relative; max-width:1240px; margin:0 auto; padding:clamp(72px,11vw,150px) clamp(20px,5vw,64px) clamp(60px,8vw,110px);">
+    <div class="hero-inner" style="position:relative; max-width:1240px; margin:0 auto; padding:clamp(72px,11vw,150px) clamp(20px,5vw,64px) clamp(60px,8vw,110px);">
       <div style="display:inline-flex; align-items:center; gap:10px; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#D6A94A; margin-bottom:30px; padding:8px 16px; border:1px solid rgba(214,169,74,0.3); border-radius:999px;"><span style="width:6px; height:6px; background:#D6A94A; border-radius:50%; display:inline-block;"></span>Web studio · Lokalni biznisi</div>
       <h1 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(44px,8vw,108px); line-height:0.98; letter-spacing:-0.02em; max-width:16ch; text-wrap:balance;">Sajt koji izgleda ozbiljno i <em style="font-style:italic; color:#D6A94A;">radi kako treba</em>.</h1>
       <p style="max-width:52ch; margin-top:32px; font-size:clamp(18px,1.7vw,22px); color:#c8bfa8; text-wrap:pretty;">MD Digital pravi sajtove za lokalne biznise koji žele bolji prvi utisak, jasnu ponudu i jednostavan način da im se klijent javi.</p>
-      <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:44px;">
+      <div class="hero-cta" style="display:flex; flex-wrap:wrap; gap:14px; margin-top:44px;">
         <a href="#projekti" style="display:inline-flex; align-items:center; gap:9px; padding:16px 30px; background:#D6A94A; color:#1B160F; border-radius:999px; font-weight:600; font-size:16px;">Pogledaj radove <span aria-hidden="true">→</span></a>
         <a href="#kontakt" style="display:inline-flex; align-items:center; gap:8px; padding:16px 30px; background:transparent; color:#F4EEDF; border:1px solid rgba(244,238,223,0.28); border-radius:999px; font-weight:500; font-size:16px;">Pošalji upit</a>
       </div>

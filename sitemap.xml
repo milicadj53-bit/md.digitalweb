@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mddigitalweb.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://mddigitalweb.com/uslovi-koriscenja</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://mddigitalweb.com/politika-privatnosti</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://mddigitalweb.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mddigitalweb.com/usluge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/radovi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/proces</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/o-meni</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/kontakt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mddigitalweb.com/uslovi-koriscenja</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://mddigitalweb.com/politika-privatnosti</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

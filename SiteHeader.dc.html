@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="position:relative; height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:0 clamp(20px,5vw,64px);">
+  <div aria-hidden="true" style="position:absolute; inset:0; background:rgba(249,244,237,0.86); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid rgba(33,28,20,0.08);"></div>
+  <a href="index.html" style="position:relative; display:flex; align-items:center; gap:12px; color:#211C14;">
+    <span style="display:flex; align-items:center; justify-content:center; width:42px; height:42px; border:1px solid rgba(190,143,39,0.45); border-radius:50%; background:rgba(190,143,39,0.06); flex:none;">
+      <img src="assets/mark-cat-badge.png" alt="" width="26" height="26" style="width:26px; height:26px; object-fit:contain; display:block;">
+    </span>
+    <span style="font-family:'Newsreader',serif; font-size:22px; letter-spacing:0.01em;">MD Digital</span>
+  </a>
+  <nav class="md-nav" aria-label="Glavna navigacija" style="position:relative; display:flex; align-items:center; gap:clamp(18px,2.2vw,32px); font-size:15px;">
+    <sc-for list="{{ links }}" as="l" hint-placeholder-count="6">
+      <a href="{{ l.href }}" style="color:{{ l.color }}; text-decoration:underline; text-decoration-color:{{ l.deco }}; text-decoration-thickness:2px; text-underline-offset:8px; transition:color .2s, text-decoration-color .2s;" style-hover="color:#211C14; text-decoration-color:#BE8F27;">{{ l.label }}</a>
+    </sc-for>
+    <a data-magnetic="1" href="kontakt.html" style="display:inline-flex; align-items:center; padding:11px 22px; background:#211C14; color:#F9F4ED; border-radius:999px; font-weight:500; transition:background .25s, color .25s;" style-hover="background:#BE8F27; color:#1B160F;">Pošalji upit</a>
+  </nav>
+  <button class="md-show-nav" type="button" onClick="{{ toggle }}" aria-label="{{ menuLabel }}" aria-expanded="{{ open }}" style="position:relative; z-index:3; flex-direction:column; align-items:center; justify-content:center; gap:5px; width:46px; height:46px; padding:0; background:transparent; border:1px solid rgba(33,28,20,0.2); border-radius:12px; cursor:pointer;">
+    <span style="{{ b1 }}"></span>
+    <span style="{{ b2 }}"></span>
+    <span style="{{ b3 }}"></span>
+  </button>
+  <a href="tel:+38162763035" class="md-pulse" aria-label="Pozovite 062 763 035" title="Pozovite 062 763 035" style="position:fixed; right:clamp(16px,2.5vw,32px); bottom:clamp(16px,2.5vw,32px); z-index:55; display:flex; align-items:center; justify-content:center; width:62px; height:62px; border-radius:50%; background:#D6A94A; color:#1B160F; box-shadow:0 18px 40px -16px rgba(27,22,15,0.6); transition:transform .3s cubic-bezier(.2,.7,.2,1), background .25s;" style-hover="transform:scale(1.08) rotate(-8deg); background:#F4EEDF; color:#1B160F;">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" style="display:block;"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+  </a>
+  <sc-if value="{{ open }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; left:0; right:0; top:76px; bottom:0; z-index:2; background:#1B160F; padding:clamp(24px,6vw,48px) clamp(20px,6vw,40px); display:flex; flex-direction:column; justify-content:space-between; overflow:auto;">
+      <nav data-stagger="60" aria-label="Mobilna navigacija" style="display:flex; flex-direction:column;">
+        <sc-for list="{{ mlinks }}" as="m" hint-placeholder-count="7">
+          <a data-reveal="up" href="{{ m.href }}" style="display:flex; align-items:baseline; gap:16px; padding:12px 0; border-bottom:1px solid rgba(244,238,223,0.1); color:{{ m.color }}; font-family:'Newsreader',serif; font-size:clamp(32px,9vw,44px); line-height:1.1;"><span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#8a8270;">{{ m.num }}</span><span>{{ m.label }}</span></a>
+        </sc-for>
+      </nav>
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:32px; font-size:15px;">
+        <a href="mailto:m.djakovic@mddigitalweb.com" style="color:#c8bfa8;">m.djakovic@mddigitalweb.com</a>
+        <a href="tel:+38162763035" style="color:#c8bfa8;">062 763 035</a>
+        <a href="https://www.instagram.com/m.djakovicc/" target="_blank" rel="noopener noreferrer" style="color:#c8bfa8;">Instagram</a>
+      </div>
+    </div>
+  </sc-if>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;76px&quot;},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;pocetna&quot;,&quot;usluge&quot;,&quot;radovi&quot;,&quot;proces&quot;,&quot;omeni&quot;,&quot;faq&quot;,&quot;kontakt&quot;],&quot;default&quot;:&quot;pocetna&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { open: false };
+  componentWillUnmount() { document.body.style.overflow = ""; }
+  toggle = () => { const o = !this.state.open; this.setState({ open: o }); document.body.style.overflow = o ? "hidden" : ""; };
+  close = () => { this.setState({ open: false }); document.body.style.overflow = ""; };
+  renderVals() {
+    const a = this.props.active || "";
+    const open = this.state.open;
+    const L = [["pocetna","Početna","index.html"],["usluge","Usluge","usluge.html"],["radovi","Radovi","radovi.html"],["proces","Proces","proces.html"],["omeni","O meni","o-meni.html"],["faq","FAQ","faq.html"]];
+    const bar = "display:block; width:20px; height:2px; background:#211C14; border-radius:2px; transition:transform .3s ease, opacity .2s ease;";
+    return {
+      links: L.map(([k, label, href]) => ({ label, href, color: k === a ? "#211C14" : "#4a4335", deco: k === a ? "#BE8F27" : "transparent" })),
+      mlinks: [...L, ["kontakt","Kontakt","kontakt.html"]].map(([k, label, href], i) => ({ label, href, num: String(i + 1).padStart(2, "0"), color: k === a ? "#D6A94A" : "#F4EEDF" })),
+      open, toggle: this.toggle, close: this.close,
+      menuLabel: open ? "Zatvori meni" : "Otvori meni",
+      b1: bar + (open ? " transform:translateY(7px) rotate(45deg);" : ""),
+      b2: bar + (open ? " opacity:0;" : ""),
+      b3: bar + (open ? " transform:translateY(-7px) rotate(-45deg);" : ""),
+    };
+  }
+}
+</script>
+</body>
+</html>

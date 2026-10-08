@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<footer style="position:relative; background:#1B160F; color:#c8bfa8; overflow:hidden; font-family:'Hanken Grotesk',system-ui,sans-serif; font-size:16px; line-height:1.6;">
+  <sc-if value="{{ showCta }}" hint-placeholder-val="{{ true }}">
+    <div style="position:relative; overflow:hidden; border-bottom:1px solid rgba(244,238,223,0.1);">
+      <div aria-hidden="true" style="position:absolute; inset:0; background:radial-gradient(50% 60% at 50% 55%,rgba(190,143,39,0.22),transparent 70%); pointer-events:none;"></div>
+      <div aria-hidden="true" style="position:absolute; left:0; right:0; top:50%; transform:translateY(-50%); pointer-events:none;">
+        <div data-marquee="60s" style="display:flex; width:max-content; font-family:'Newsreader',serif; font-size:clamp(90px,15vw,220px); line-height:1; color:rgba(214,169,74,0.06);"><span style="display:flex; align-items:center; gap:48px; padding-right:48px; white-space:nowrap;"><span>Treba vam novi sajt?</span><span style="font-size:0.5em;">✦</span><span>Javite se</span><span style="font-size:0.5em;">✦</span><span>Treba vam novi sajt?</span><span style="font-size:0.5em;">✦</span><span>Javite se</span><span style="font-size:0.5em;">✦</span></span><span style="display:flex; align-items:center; gap:48px; padding-right:48px; white-space:nowrap;"><span>Treba vam novi sajt?</span><span style="font-size:0.5em;">✦</span><span>Javite se</span><span style="font-size:0.5em;">✦</span><span>Treba vam novi sajt?</span><span style="font-size:0.5em;">✦</span><span>Javite se</span><span style="font-size:0.5em;">✦</span></span></div>
+      </div>
+      <div aria-hidden="true" class="md-hide-m" data-parallax="-0.12" style="position:absolute; right:clamp(24px,6vw,96px); top:clamp(40px,6vw,80px); width:clamp(110px,11vw,150px); aspect-ratio:1;">
+        <svg data-spin="18s" viewBox="0 0 200 200" style="position:absolute; inset:0; width:100%; height:100%; display:block;"><defs><path id="mdc-cta" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path></defs><text style="font-family:'JetBrains Mono',monospace; font-size:14px; letter-spacing:2.8px; fill:#D6A94A;"><textPath href="#mdc-cta">JAVITE SE ✦ NOVI SAJT ✦ MD DIGITAL ✦ </textPath></text></svg>
+        <div style="position:absolute; inset:26%; border-radius:50%; background:#F9F4ED; display:flex; align-items:center; justify-content:center;"><img data-float="1" src="assets/mark-cat-badge.png" alt="" width="56" height="56" style="width:62%; height:auto; display:block;"></div>
+      </div>
+      <div style="position:relative; max-width:1240px; margin:0 auto; padding:clamp(40px,7vw,110px) clamp(20px,5vw,64px) clamp(44px,8vw,110px); text-align:center;">
+        <div data-reveal="up" style="display:inline-flex; align-items:center; gap:10px; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:#D6A94A; margin-bottom:28px; padding:8px 16px; border:1px solid rgba(214,169,74,0.3); border-radius:999px;"><span style="width:6px; height:6px; background:#D6A94A; border-radius:50%; display:inline-block;"></span>Sledeći korak</div>
+        <h2 data-stagger="70" style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(44px,7.4vw,108px); line-height:1; letter-spacing:-0.025em; color:#F4EEDF; max-width:13ch; margin:0 auto;"><span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.08em 0.1em 0; margin:0 -0.08em -0.1em 0;"><span data-reveal="word" style="display:inline-block;">Treba</span></span> <span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.08em 0.1em 0; margin:0 -0.08em -0.1em 0;"><span data-reveal="word" style="display:inline-block;">vam</span></span> <span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.08em 0.1em 0; margin:0 -0.08em -0.1em 0;"><span data-reveal="word" style="display:inline-block;">novi</span></span> <span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.08em 0.1em 0; margin:0 -0.08em -0.1em 0;"><span data-reveal="word" style="display:inline-block;">sajt?</span></span> <span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.12em 0.1em 0; margin:0 -0.12em -0.1em 0;"><span data-reveal="word" data-base="skewX(-8deg)" style="display:inline-block; color:#D6A94A; transform:skewX(-8deg);">Javite</span></span> <span style="display:inline-block; overflow:hidden; vertical-align:top; padding:0 0.12em 0.1em 0; margin:0 -0.12em -0.1em 0;"><span data-reveal="word" data-base="skewX(-8deg)" style="display:inline-block; color:#D6A94A; transform:skewX(-8deg);">se.</span></span></h2>
+        <div class="md-btns" data-reveal="up" data-delay="500" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:16px; margin-top:48px;">
+          <a data-magnetic="1" class="md-pulse" href="kontakt.html" style="display:inline-flex; align-items:center; gap:10px; white-space:nowrap; padding:20px 38px; background:#D6A94A; color:#1B160F; border-radius:999px; font-weight:600; font-size:17px; transition:background .25s;" style-hover="background:#F4EEDF; color:#1B160F;">Pošalji upit <span aria-hidden="true">→</span></a>
+          <a data-magnetic="1" href="tel:+38162763035" style="display:inline-flex; align-items:center; gap:10px; white-space:nowrap; padding:20px 34px; border:1px solid rgba(244,238,223,0.3); color:#F4EEDF; border-radius:999px; font-weight:500; font-size:16px; transition:border-color .25s, color .25s;" style-hover="border-color:#D6A94A; color:#D6A94A;">Pozovi <span style="font-family:'JetBrains Mono',monospace; font-size:14px; opacity:0.8;">062 763 035</span></a>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+  <div class="md-stack" style="max-width:1240px; margin:0 auto; padding:clamp(48px,6vw,72px) clamp(20px,5vw,64px) 24px; display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px;">
+    <div>
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+        <span style="display:flex; align-items:center; justify-content:center; width:40px; height:40px; border:1px solid rgba(214,169,74,0.4); border-radius:50%; background:#F9F4ED; flex:none;">
+          <img src="assets/mark-cat-badge.png" alt="" width="24" height="24" loading="lazy" style="width:24px; height:24px; object-fit:contain; display:block;">
+        </span>
+        <span style="font-family:'Newsreader',serif; font-size:22px; color:#F4EEDF;">MD Digital</span>
+      </div>
+      <p style="max-width:30ch;">Izrada sajtova za lokalne biznise.</p>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8a8270; margin-bottom:16px;">Stranice</div>
+      <nav aria-label="Stranice" style="display:grid; grid-template-columns:1fr 1fr; gap:10px 20px;">
+        <a href="index.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Početna</a>
+        <a href="usluge.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Usluge</a>
+        <a href="radovi.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Radovi</a>
+        <a href="proces.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Proces</a>
+        <a href="o-meni.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">O meni</a>
+        <a href="faq.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">FAQ</a>
+        <a href="kontakt.html" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Kontakt</a>
+      </nav>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8a8270; margin-bottom:16px;">Kontakt</div>
+      <div style="display:flex; flex-direction:column; gap:10px;">
+        <a href="mailto:m.djakovic@mddigitalweb.com" style="color:#c8bfa8; overflow-wrap:anywhere;" style-hover="color:#D6A94A;">m.djakovic@mddigitalweb.com</a>
+        <a href="tel:+38162763035" style="color:#c8bfa8;" style-hover="color:#D6A94A;">062 763 035</a>
+        <a href="https://www.instagram.com/m.djakovicc/" target="_blank" rel="noopener noreferrer" style="color:#c8bfa8;" style-hover="color:#D6A94A;">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div aria-hidden="true" data-parallax="0.06" style="font-family:'Newsreader',serif; font-size:clamp(76px,19vw,300px); line-height:0.82; letter-spacing:-0.035em; color:rgba(214,169,74,0.11); text-align:center; white-space:nowrap; padding-top:24px; user-select:none;">MD Digital</div>
+  <div style="position:relative; border-top:1px solid rgba(244,238,223,0.1); background:#1B160F;">
+    <div style="max-width:1240px; margin:0 auto; padding:22px clamp(20px,5vw,64px); display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 24px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#8a8270;">
+      <span>© 2026 MD Digital</span>
+      <nav aria-label="Pravne informacije" style="display:flex; flex-wrap:wrap; gap:20px;">
+        <a href="uslovi-koriscenja.html" style="color:#8a8270;" style-hover="color:#D6A94A;">Uslovi korišćenja</a>
+        <a href="politika-privatnosti.html" style="color:#8a8270;" style-hover="color:#D6A94A;">Politika privatnosti</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;900px&quot;},&quot;hideCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() { return { showCta: !this.props.hideCta }; }
+}
+</script>
+</body>
+</html>
